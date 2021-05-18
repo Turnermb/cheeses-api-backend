@@ -52,7 +52,7 @@ app.use(express.json())
 //////////
 // Create a test route
 app.get('/', (req, res) => {
-    res.send("Hello, is it me you're looking for?")
+    res.send("Hello, is it me you are looking for?")
 })
 
 // Cheeses index route
@@ -94,6 +94,7 @@ app.delete('/cheeses/:id', async (req, res) => {
         res.status(400).json(error)
     }
 })
+
 //////////
 // LISTENER
 //////////
